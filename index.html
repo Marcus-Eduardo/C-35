@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+  <script src="p5.play.js"></script>
+
+  <!-- Já adicionei o SDK do Firebase para você -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <script type="module">
+
+    //adicione aqui a sua configuração do firebase aqui
+    const firebaseConfig = {
+      apiKey: "AIzaSyCmbieJ3MFwtPXQLWOge4EE8s_M_YXrqhI",
+      authDomain: "c-35-balao-de-ar-quente.firebaseapp.com",
+      databaseURL: "https://c-35-balao-de-ar-quente-default-rtdb.firebaseio.com",
+      projectId: "c-35-balao-de-ar-quente",
+      storageBucket: "c-35-balao-de-ar-quente.appspot.com",
+      messagingSenderId: "93820475518",
+      appId: "1:93820475518:web:b72b8ff01357b9c3d2602f"
+    };
+
+    //o firebase já está sendo iniciado aqui
+    const app = firebase.initializeApp(firebaseConfig);
+
+  </script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
